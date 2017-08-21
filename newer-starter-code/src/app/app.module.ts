@@ -10,12 +10,22 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { SongsComponent } from './songs/src/app/songs/songs/songs.component';
+import { SongsNewComponent } from './songs/src/app/songs-new/songs-new.component';
+import { SongsEditComponent } from './songs/src/app/songs-edit/songs-edit.component';
+import { SongIndexComponent } from './songs/src/app/song-index/song-index.component';
+import { SongsDeleteComponent } from './songs/src/app/songs-delete/songs-delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SongsComponent,
+    SongsNewComponent,
+    SongsEditComponent,
+    SongIndexComponent,
+    SongsDeleteComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'cli-universal-demo'}),

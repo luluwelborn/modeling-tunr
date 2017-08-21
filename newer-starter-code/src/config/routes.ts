@@ -39,4 +39,18 @@ router.delete('/api/managers/:id', managersController.destroy);
 
 //Song Routes
 
+router.get('/api/songs', songsController.index);
+
+// create
+router.post('/api/songs', songsController.create);
+
+// show
+router.get('/api/songs/:id', songsController.show);
+
+// update
+router.put('/api/songs/:id', songsController.update);
+
+// destroy
+router.delete('/api/songs/:id', songsController.destroy);
+
 export {router};
